@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 10%;
+    box-shadow: -2px 4px 9px 0px black;
+    z-index: 1;
+    padding: 10px 25px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+   
+}
+
+.newButton {
+    display: flex;
+    align-items: center;
+    border: 2px dashed black;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: white;
+    justify-self: end;
+    font-weight: 700;
+    font-size: 1.2rem;
+    transition: 100ms;
+}
+
+.newButton:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.newButton:active {
+    background-color: white;
+}
+
+
+.main {
+    padding: 30px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.bookForm {
+    flex-direction: column;
+    width: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow: 3px 8px 8px 0px black;
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 20%;
+}
+
+.bookCard {
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+}
